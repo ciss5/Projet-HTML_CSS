@@ -181,7 +181,7 @@ body{
     background-color: tomato;
     z-index: 1000;
 }
-
+/* style pour l'exo 8 position sticky*/
 #container_st {
     display: block;
 }
@@ -216,7 +216,7 @@ nav ul li a {
 
 .aboutus {
     width: 81%;
-    margin: -82px auto;
+    margin: -20px auto;
 }
 
 footer {
