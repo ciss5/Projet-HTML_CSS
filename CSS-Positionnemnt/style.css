@@ -215,8 +215,8 @@ nav ul li a {
 }
 
 .aboutus {
-    width: 77%;
-    margin: 20px auto;
+    width: 81%;
+    margin: -82px auto;
 }
 
 footer {
@@ -227,12 +227,10 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
     width: 100%;
     position: fixed;
     bottom: 0;
     right: 0;
-
 }
 
 footer a {
