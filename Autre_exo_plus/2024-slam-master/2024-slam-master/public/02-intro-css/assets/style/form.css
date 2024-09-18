@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header{
+    float: left;
+    top: 0;
+}
+main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+form{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    width: 250px;
+    border-radius: 12px;
+    background-color: tomato;
+    padding: 25px;
+}
+form input{
+    margin-bottom:10px ;
+}
+form>div{
+    margin-bottom:10px ;
+}
+form select{
+    margin-bottom:10px ;
+    list-style-type: disc;
+}
+form textarea{
+    margin-bottom:10px ;
+}
+form button{
+    width: 71px;
+    background-color: blue;
+    color:white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+input{
+}
+#genr{
+    display: block;
+}

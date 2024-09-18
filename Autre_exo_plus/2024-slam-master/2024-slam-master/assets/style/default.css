@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+
+body {
+    background-color: #b6b2b2;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+.corps {
+    margin: auto;
+    width: 50%;
+    min-width: 800px;
+    background-color: #fff;
+    padding: 10px;
+    min-height: 100vh; /*min- taille minimum de l'élément */
+    text-align: justify;
+}
+
+/* Utiliser pour l'affichage au tableau et permettre de mieux centrer l'exercice */
+.blank {
+    height: 700px;
+}
+
+.thumbnail {
+    width: 250px;
+}
