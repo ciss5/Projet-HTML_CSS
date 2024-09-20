@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/RobotoSlab-VariableFont_wght.ttf);
+}
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +15,9 @@ body {
 header{
     float: left;
     top: 0;
+}
+header h1{
+    font-family: Roboto;
 }
 main{
     display: grid;
