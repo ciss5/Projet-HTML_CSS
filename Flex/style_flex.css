@@ -2,7 +2,7 @@
     box-sizing: content-box;
 }
 body{
-
+height: 100vh;
 }
 .container{
     display: flex;
@@ -41,17 +41,39 @@ body{
 .section{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 .article1{
     background-color: yellow;
+    flex-basis: 60px;
+}
+.article1 aside{
 }
 .article2{
     background-color: deepskyblue;
+    flex-basis:60px
+}
+.article2 aside{
+
 }
 .article3{
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     background-color: violet;
+    width: 100%;
+
+
+
+}
+@media (max-width: 668px) {
+    .article3 {
+        flex-wrap: wrap; /* Les div passent en wrap quand l'écran est plus petit */
+    }
+
+    .article3 div {
+        flex: 1 /* Chaque div prend 100% de la largeur de la ligne */
+    }
 }
 .article3 div{
     border: 1px dotted white;
