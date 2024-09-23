@@ -2,11 +2,16 @@
     box-sizing: content-box;
 }
 body{
-height: 100vh;
+    margin: 0;
+    padding: 0;
+   /* height: 100%;
+    width: 100%;*/
 }
 .container{
     display: flex;
     flex-direction: column;
+    min-height: 100vh; /* 100% de la hauteur de la fenêtre (viewport) */
+    width: 100vw; /* 100% de la largeur de la fenêtre */
 }
 .header{
     display: flex;
@@ -38,46 +43,45 @@ height: 100vh;
     text-align: center;
 
 }
+.content-main{
+    flex: 1;
+    display: flex;
+}
 .section{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    /*height: 960px;*/
+   /* width: 100%;*/
 }
 .article1{
     background-color: yellow;
-    flex-basis: 60px;
+    display: flex;
+    /*flex-basis: 200px;*/
+
 }
 .article1 aside{
+    flex-grow: 5
 }
 .article2{
+    display: flex;
     background-color: deepskyblue;
-    flex-basis:60px
+    /*flex-basis: 200px;*/
 }
 .article2 aside{
-
+    flex-grow: 5
 }
 .article3{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     background-color: violet;
-    width: 100%;
-
-
-
-}
-@media (max-width: 668px) {
-    .article3 {
-        flex-wrap: wrap; /* Les div passent en wrap quand l'écran est plus petit */
-    }
-
-    .article3 div {
-        flex: 1 /* Chaque div prend 100% de la largeur de la ligne */
-    }
+    /*width: 100%;*/
 }
 .article3 div{
     border: 1px dotted white;
     padding: 15px;
+    /*width: 80%;*/
+    flex: 1 0 203px;
 }
 .footer{
     background-color: lightgreen;
