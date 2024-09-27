@@ -4,8 +4,6 @@
 body{
     margin: 0;
     padding: 0;
-   /* height: 100%;
-    width: 100%;*/
 }
 .container{
     display: flex;
@@ -13,6 +11,9 @@ body{
     min-height: 100vh; /* 100% de la hauteur de la fenêtre (viewport) */
     width: 100vw; /* 100% de la largeur de la fenêtre */
 }
+                    /*----------------------
+                    style pour la partie header
+                    --------------------------*/
 .header{
     display: flex;
     flex-direction: column;
@@ -23,11 +24,10 @@ body{
 .header ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     list-style-type: none;
-    justify-items: center;
-    padding: 0;
+    padding: 0; /*pour enlever les padding ul */
     width: 100%;
+    margin: 0; /*pour enlever les margin ul */
 }
 .content_nav{
     display: flex;
@@ -38,11 +38,12 @@ body{
 }
 .header ul li{
     border: 1px solid black;
-    flex-basis: fit-content;
     flex-grow: 1;
     text-align: center;
-
 }
+                        /*----------------------
+                        style pour la partie main
+                        --------------------------*/
 .content-main{
     flex: 1;
     display: flex;
@@ -50,39 +51,33 @@ body{
 .section{
     display: flex;
     flex-direction: row;
-    /*height: 960px;*/
-   /* width: 100%;*/
 }
 .article1{
     background-color: yellow;
     display: flex;
-    /*flex-basis: 200px;*/
-
-}
-.article1 aside{
-    flex-grow: 5
+    flex-grow: 1;
 }
 .article2{
     display: flex;
     background-color: deepskyblue;
-    /*flex-basis: 200px;*/
-}
-.article2 aside{
-    flex-grow: 5
+    flex-grow: 1;
 }
 .article3{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: violet;
-    /*width: 100%;*/
+    width: 80%;
 }
 .article3 div{
     border: 1px dotted white;
     padding: 15px;
-    /*width: 80%;*/
-    flex: 1 0 203px;
+    flex: 1 0 203px;/* flex pour le contenu des div */
 }
+               /*----------------------
+               style pour la partie footer
+               --------------------------*/
 .footer{
     background-color: lightgreen;
+    text-align: center;
 }
