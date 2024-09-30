@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    /*max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+.with1, with2, with3, with4, with5, with6{
+    grid-area: colo-blanc1;
+    background-color: white;
+}
+.with2{
+    grid-area: colo-blanc2;
+    background-color: white;
+}
+.with3{
+    grid-area: colo-blanc3;
+    background-color: white;
+}
+.with4{
+    grid-area: colo-blanc4;
+    background-color: white;
+}
+.with5{
+    grid-area: colo-blanc5;
+    background-color: white;
+}
+.with6{
+    grid-area: colo-blanc6;
+    background-color: white;
+}
+.with7{
+    grid-area: colo-blanc7;
+    background-color: white;
+
+}
+.with9{
+    grid-area: colo-blanc9;
+    background-color: white;
+}
+.with10{
+    grid-area: colo-blanc10;
+    background-color: white;
+}
+.yellow1{
+    grid-area: colo-jaune1;
+    background-color: yellow;
+}
+.yellow2{
+    grid-area: colo-jaune2;
+    background-color: yellow;
+}
+.yellow3{
+    grid-area: colo-jaune3;
+    background-color: yellow;
+}
+.bleu1{
+    grid-area: colo-bleu1;
+    background-color: blue;
+}
+.bleu2{
+    grid-area: colo-bleu2;
+    background-color: blue;
+}
+.bleu3{
+    grid-area: colo-bleu3;
+    background-color: blue;
+}
+.red1{
+    grid-area: colo-red1;
+    background-color: darkred;
+}
+.red2{
+    grid-area: colo-red2;
+    background-color: darkred;
+}
+.red3{
+    grid-area: colo-red3;
+    background-color: darkred;
+}
+.grid-container div{
+   /* padding: 20px 0;*/
+}
+.grid-container{
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 'colo-blanc1 colo-blanc2 colo-blanc2 colo-blanc2 colo-blanc2 colo-blanc2 colo-blanc2 colo-blanc3 colo-blanc3 colo-blanc3 colo-blanc3 colo-blanc3 colo-blanc3 colo-blanc4 colo-jaune1 '
+                         'colo-blanc1 colo-bleu1 colo-bleu1 colo-bleu1 colo-bleu1 colo-bleu1 colo-bleu1 colo-blanc5 colo-blanc5 colo-bleu2 colo-bleu2 colo-bleu2 colo-bleu2 colo-blanc4 colo-jaune1 '
+                          'colo-blanc1 colo-bleu1 colo-bleu1 colo-bleu1 colo-bleu1 colo-bleu1 colo-bleu1 colo-blanc5 colo-blanc5 colo-bleu2 colo-bleu2 colo-bleu2 colo-bleu2 colo-blanc4 colo-jaune1 '
+                          '. colo-blanc6 colo-blanc6 . colo-blanc7 colo-blanc7 colo-blanc8 colo-jaune2  colo-jaune2 colo-red1  colo-red1 colo-red1 colo-red2 colo-blanc4 colo-jaune1 '
+                          '. colo-blanc6 colo-blanc6 . colo-blanc7 colo-blanc7 colo-blanc8 colo-jaune2  colo-jaune2 colo-red1  colo-red1 colo-red1 colo-red2 colo-blanc4 colo-jaune1 '
+                          '. colo-blanc6 colo-blanc6 . colo-blanc7 colo-blanc7 colo-blanc8 colo-jaune2  colo-jaune2 colo-red1  colo-red1 colo-red1 colo-red2 colo-blanc4 colo-jaune1 '
+                          '. colo-blanc6 colo-blanc6 . colo-blanc7 colo-blanc7 colo-blanc8 colo-jaune2  colo-jaune2 colo-red1  colo-red1 colo-red1 colo-red2 colo-blanc4 colo-jaune1 '
+                          '. colo-blanc6 colo-blanc6 . colo-jaune3 colo-red3 colo-red3 colo-bleu3  colo-bleu3 colo-blanc9  colo-blanc9 colo-blanc9 colo-blanc10 . . '
+                          '. colo-blanc6 colo-blanc6 . colo-jaune3 colo-red3 colo-red3 colo-bleu3  colo-bleu3 colo-blanc9  colo-blanc9 colo-blanc9 colo-blanc10 . . '
+                          '. colo-blanc6 colo-blanc6 . colo-jaune3 colo-red3 colo-red3 colo-bleu3  colo-bleu3 colo-blanc9  colo-blanc9 colo-blanc9 colo-blanc10 . . ';
+    width: 100%;
+    height: 100vh;
+    grid-template-rows:repeat( 15, auto);
+    grid-template-columns: repeat( 15, 1fr) ;
+    background-color: black;
+}
