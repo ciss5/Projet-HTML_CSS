@@ -1,130 +1,117 @@
 *{
     box-sizing: border-box;
-    margin: 0;
+   margin: 0;
     padding: 0;
 }
 body{
     height: 100vh;
-    /*max-width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;*/
 }
-.with1, with2, with3, with4, with5, with6{
+.container{
+    border: 10px solid black;
+    padding: 0;
+    margin-top: 60px;
+    width: 75%;
+    height: 90%;
+
+}
+.with1 , .with2, .with3, .with4, .with5, .with6, .with7, .with8, .with9, .with10, .with11, .with12, .with13, .with14, .with15, .with16 {
+    background-color: #dddddd;
+}
+.with1{
     grid-area: colo-blanc1;
-    background-color: white;
 }
 .with2{
     grid-area: colo-blanc2;
-    background-color: white;
 }
 .with3{
     grid-area: colo-blanc3;
-    background-color: white;
 }
 .with4{
     grid-area: colo-blanc4;
-    background-color: white;
 }
 .with5{
     grid-area: colo-blanc5;
-    background-color: white;
 }
 .with6{
     grid-area: colo-blanc6;
-    background-color: white;
 }
 .with7{
     grid-area: colo-blanc7;
-    background-color: white;
 }
 .with8{
     grid-area: colo-blanc8;
-    background-color: white;
 }
 .with9{
     grid-area: colo-blanc9;
-    background-color: white;
 }
 .with10{
     grid-area: colo-blanc10;
-    background-color: white;
 }
 .with11{
     grid-area: colo-blanc11;
-    background-color: white;
 }
 .with12{
     grid-area: colo-blanc12;
-    background-color: white;
 }
 .with13{
     grid-area: colo-blanc13;
-    background-color: white;
 }
 .with14{
     grid-area: colo-blanc14;
-    background-color: white;
 }
 .with15{
     grid-area: colo-blanc15;
-    background-color: white;
 }
 .with16{
     grid-area: colo-blanc16;
-    background-color: white;
+}
+.yellow1 ,.yellow2 ,.yellow3 ,.yellow4 ,.yellow5 {
+    background-color: yellow;
 }
 .yellow1{
     grid-area: colo-jaune1;
-    background-color: yellow;
 }
 .yellow2{
     grid-area: colo-jaune2;
-    background-color: yellow;
 }
 .yellow3{
     grid-area: colo-jaune3;
-    background-color: yellow;
 }
 .yellow4{
     grid-area: colo-jaune4;
-    background-color: yellow;
 }
 .yellow5{
     grid-area: colo-jaune5;
-    background-color: yellow;
+}
+.bleu1,.bleu2 , .bleu3,.bleu4, .bleu5{
+    background-color: blue;
 }
 .bleu1{
     grid-area: colo-bleu1;
-    background-color: blue;
 }
 .bleu2{
     grid-area: colo-bleu2;
-    background-color: blue;
 }
 .bleu3{
     grid-area: colo-bleu3;
-    background-color: blue;
 }
 .bleu4{
     grid-area: colo-bleu4;
-    background-color: blue;
+}
+.red1,.red2,.red3,.red4,.red5{
+    background-color: darkred;
 }
 .red1{
     grid-area: colo-red1;
-    background-color: darkred;
 }
 .red2{
     grid-area: colo-red2;
-    background-color: darkred;
 }
 .red3{
     grid-area: colo-red3;
-    background-color: darkred;
 }
 .red4{
     grid-area: colo-red4;
-    background-color: darkred;
 }
 .red5{
     grid-area: colo-red5;
@@ -148,11 +135,11 @@ body{
                           ' colo-blanc12 colo-red4 colo-red4 . colo-jaune5 colo-blanc13 colo-blanc13 colo-blanc13  colo-blanc13 colo-blanc14  colo-blanc14 colo-bleu4 colo-jaune4 colo-blanc11 colo-blanc11 '
                          ' colo-blanc12 colo-red4 colo-red4 . colo-jaune5 colo-blanc13 colo-blanc13 colo-blanc13  colo-blanc13 colo-blanc14  colo-blanc14 colo-bleu4 colo-jaune4 colo-blanc11 colo-blanc11 '
                          ' colo-blanc12 colo-red4 colo-red4 . colo-jaune5 colo-blanc13 colo-blanc13 colo-blanc13  colo-blanc13 colo-blanc14  colo-blanc14 colo-bleu4 colo-jaune4 colo-blanc11 colo-blanc11 '
-                         ' colo-blanc12 colo-red4 colo-red4 . colo-jaune5 colo-red5 . .  . . . colo-blanc15 colo-blanc15 colo-blanc15 colo-blanc15 '
-                         ' colo-blanc16 colo-blanc16 colo-blanc16 . colo-jaune5 colo-red5 . .  . . . colo-blanc15 colo-blanc15 colo-blanc15 colo-blanc15 ';
+                         ' colo-blanc12 colo-red4 colo-red4 . colo-jaune5 colo-red5 colo-red5 .  . . . colo-blanc15 colo-blanc15 colo-blanc15 colo-blanc15 '
+                         ' colo-blanc16 colo-blanc16 colo-blanc16 . colo-jaune5 colo-red5 colo-red5 .  . . . colo-blanc15 colo-blanc15 colo-blanc15 colo-blanc15 ';
 
     width: 100%;
-    height: 100vh;
+    height: 100%;
     grid-template-rows:repeat( 14, auto);
     grid-template-columns: repeat( 15, 1fr) ;
     background-color: black;
