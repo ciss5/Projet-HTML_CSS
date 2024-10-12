@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100% de la hauteur de la fenêtre (viewport) */
+    width: 100vw; /* 100% de la largeur de la fenêtre */
+}
+article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+}
+section{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+
+}
+section div{
+   /* flex-grow: 1;*/
+}
+.anim2>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 556px;
+    height: 222px;
+    background-color: darkgrey;
+    border-radius:10px;
+    margin: 5px;
+}
+h3{
+    margin-top:10px
+}
+#queue{
+    height: 453px;
+}
+/*----------------------------------------------------------------
+section 2
+--------------------------------- */
+.carre{
+    width: 84px;
+    height: 84px;
+    margin-top:38px;
+    background-color:yellow;
+    animation-name: changecarre;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    transition: background-color 2s, transform 3s ;
+}
+@keyframes changecarre {
+    from {background-color: yellow;}
+    to {background-color: red; transform: rotate(540deg);}
+}
+.cube{
+   width: 20px;
+    height: 164px;
+    margin-top:11px;
+    background-color:transparent;
+    border: 1px solid green;
+    position: relative;
+}
+.cube>div{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:green;
+    animation-name: boul;
+    animation-duration: 5s;
+    position: absolute;
+}
+@keyframes boul {
+    0%   {top:0;}
+    25%  {top:144px;}
+    50%  {top:64px;}
+    100% {top:144px;}
+}
+.cercle{
+box-sizing:content-box;
+    display: flex;
+    flex-direction: row;
+    margin-top: 17px;
+}
+.cercle>div{
+    margin: 2px;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    background-color:green;
+    border: 1px solid black;
+}
