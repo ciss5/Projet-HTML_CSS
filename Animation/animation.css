@@ -5,6 +5,7 @@
 }
 body {
     display: flex;
+    align-items: center;
     flex-direction: column;
     min-height: 100vh; /* 100% de la hauteur de la fenêtre (viewport) */
     width: 100vw; /* 100% de la largeur de la fenêtre */
@@ -40,6 +41,28 @@ h3{
 #queue{
     height: 453px;
 }
+.menu h3{
+    color: white;
+    padding: 5px;
+    margin-top: 0;
+    cursor: pointer;
+    position:absolute;
+    top: 0;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 74px;
+    height: 35px;
+    border-radius: 5px;
+    margin: 5px;
+    background-color:black;
+    position: relative;
+}
+.menu:hover{
+    height:691px;
+}
 /*----------------------------------------------------------------
 section 2
 --------------------------------- */
@@ -68,19 +91,24 @@ section 2
     position: relative;
 }
 .cube>div{
-    width: 20px;
-    height: 20px;
+    width: 19px;
+    height: 19px;
     border-radius: 50%;
     background-color:green;
     animation-name: boul;
-    animation-duration: 5s;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition: background-color 1s ;
     position: absolute;
 }
 @keyframes boul {
-    0%   {top:0;}
-    25%  {top:144px;}
-    50%  {top:64px;}
-    100% {top:144px;}
+    0%   {top:0;box-shadow:none;}
+    20%  {top:143px; box-shadow:2px 3px green; }
+    40%  {top:64px;box-shadow:none;}
+    60%  {top:143px;box-shadow:1px 3px green;}
+    80%  {top:74px;box-shadow:none;}
+    100% {top:143px;box-shadow:1px 3px green;}
 }
 .cercle{
 box-sizing:content-box;
@@ -93,6 +121,26 @@ box-sizing:content-box;
     width: 74px;
     height: 74px;
     border-radius: 50%;
-    background-color:green;
+    background-color:springgreen;
     border: 1px solid black;
+    animation-name: cercle;
+    animation-duration: 3s;
+    animation-delay: -2s;
+    /*animation-direction: alternate-reverse;*/
+    animation-iteration-count: infinite;
+    transition: background-color 2s;
+}
+.cercle div:nth-child(1){
+    animation-delay: 1s;
+}
+.cercle div:nth-child(2){
+    animation-delay: 2s;
+}
+.cercle div:nth-child(3){
+    animation-delay: 3s;
+}
+@keyframes cercle {
+    0%   {background-color: springgreen;}
+    50%  {background-color: orange/*lightslategrey;*/ }
+    100%  {background-color: red;}
 }
