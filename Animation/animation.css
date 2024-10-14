@@ -146,14 +146,17 @@ box-sizing:content-box;
 }
 .course{
     position: relative;
+   /* box-shadow: 10px 5px 50px black inset;*/
 }
 .course div {
     position: absolute;
     animation-name: course;
-    animation-duration: 5s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
     top: 0;
     left: 0;
 }
+
 .course div:nth-child(2) {
     animation-delay: 1s;
 }
@@ -186,7 +189,7 @@ box-sizing:content-box;
     25% {
         top: 0;
         left: 96%; /* À droite */
-        
+
     }
     50% {
         top: 92%; /* En bas */
