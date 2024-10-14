@@ -125,7 +125,7 @@ box-sizing:content-box;
     border: 1px solid black;
     animation-name: cercle;
     animation-duration: 3s;
-    animation-delay: -2s;
+    /*animation-delay: -2s;*/
     /*animation-direction: alternate-reverse;*/
     animation-iteration-count: infinite;
     transition: background-color 2s;
@@ -143,4 +143,61 @@ box-sizing:content-box;
     0%   {background-color: springgreen;}
     50%  {background-color: orange/*lightslategrey;*/ }
     100%  {background-color: red;}
+}
+.course{
+    position: relative;
+}
+.course div {
+    position: absolute;
+    animation-name: course;
+    animation-duration: 5s;
+    top: 0;
+    left: 0;
+}
+.course div:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.course div:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.course div:nth-child(4) {
+    animation-delay: 3s;
+}
+
+.course div:nth-child(5) {
+    animation-delay: 4s;
+}
+
+.course div:nth-child(6) {
+    animation-delay: 5s;
+}
+
+.course div:nth-child(7) {
+    animation-delay: 6s;
+}
+
+@keyframes course {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        top: 0;
+        left: 96%; /* À droite */
+        
+    }
+    50% {
+        top: 92%; /* En bas */
+        left: 96%;
+    }
+    75% {
+        top: 92%;
+        left: 0; /* À gauche */
+    }
+    100% {
+        top: 0;
+        left: 0; /* Retour au départ */
+    }
 }
