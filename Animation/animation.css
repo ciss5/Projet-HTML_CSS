@@ -59,6 +59,7 @@ h3{
     margin: 5px;
     background-color:black;
     position: relative;
+    transition: height 5s;
 }
 .menu:hover{
     height:691px;
@@ -204,3 +205,82 @@ box-sizing:content-box;
         left: 0; /* Retour au départ */
     }
 }
+.cercle_3d {
+    perspective: 1000px; /* Ajoute de la perspective pour mieux voir la 3D */
+    display: flex;
+    position: relative;
+    height: 200px;
+    transform-style: preserve-3d; /*for the roratation*/
+    animation-name: rotate_anim;
+    animation-duration: 25s;
+}
+
+.cercle_3d > div {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    transform-style: preserve-3d;
+    border-radius:2px;
+}
+.cercle_3d > div:nth-child(1) {
+    background-color: red;
+    transform: rotateY(0deg) translateZ(50px); /* Ajuste la translation pour être visible */
+}
+
+.cercle_3d > div:nth-child(2) {
+    background-color: blue;
+    transform: rotateY(40deg) translateZ(50px); /* Ajuste également la rotation */
+}
+
+.cercle_3d > div:nth-child(3) {
+    background-color: orange;
+    transform: rotateY(80deg) translateZ(50px);
+}
+
+.cercle_3d > div:nth-child(4) {
+    background-color: lightblue;
+    transform: rotateY(120deg) translateZ(50px);
+}
+
+.cercle_3d > div:nth-child(5) {
+    background-color: green;
+    transform: rotateY(160deg) translateZ(50px);
+}
+
+.cercle_3d > div:nth-child(6) {
+    background-color: purple;
+    transform: rotateY(200deg) translateZ(50px);
+}
+
+.cercle_3d > div:nth-child(7) {
+    background-color: pink;
+    transform: rotateY(240deg) translateZ(50px);
+}
+
+.cercle_3d > div:nth-child(8) {
+    background-color: yellow;
+    transform: rotateY(280deg) translateZ(50px);
+}
+
+.cercle_3d > div:nth-child(9) {
+    background-color: brown;
+    transform: rotateY(320deg) translateZ(50px);
+}
+#queue {
+    position: relative;
+}
+.Anim_3d{
+    /*transform: skew(50deg,24deg);*/
+
+}
+@keyframes rotate_anim {
+    from {
+        transform: rotateY(0deg) /*rotateZ(13deg) perspective(1000px)*/;
+
+    }
+    to {
+        transform: rotateY(360deg) /*rotateZ(13deg) perspective(1000px)*/;
+
+    }
+}
+
