@@ -1,0 +1,328 @@
+                /*----------------------------------------------------------------
+                                    **************
+                                    *  Templete  *
+                                    **************
+                ________________________________________________________________*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; /* 100% de la hauteur de la fenêtre (viewport) */
+    width: 100vw; /* 100% de la largeur de la fenêtre */
+}
+article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+}
+section{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+
+}
+.anim2>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 556px;
+    height: 222px;
+    background-color: darkgrey;
+    border-radius:10px;
+    margin: 5px;
+}
+h3{
+    margin-top:10px
+}
+#queue{
+    height: 453px;
+}
+                                /*----------------------------------------------------------------
+                                                                **************
+                                                                *  section1  *
+                                                                **************
+                                            ________________________________________________________________*/
+.menu h3{
+    color: white;
+    padding: 5px;
+    margin-top: 0;
+    cursor: pointer;
+    position:absolute;
+    top: 0;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 74px;
+    height: 35px;
+    border-radius: 5px;
+    margin: 5px;
+    background-color:black;
+    position: relative;
+    transition: height 5s;
+}
+.menu:hover{
+    height:691px;
+}
+                                        /*----------------------------------------------------------------
+                                                                         **************
+                                                                         *  section2  *
+                                                                         **************
+                                                     ________________________________________________________________*/
+
+                /*carré qui tourne */
+.carre{
+    width: 84px;
+    height: 84px;
+    margin-top:38px;
+    background-color:yellow;
+    animation-name: changecarre;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    transition: background-color 2s, transform 3s ;
+}
+@keyframes changecarre {/* changement de couleur et la rotation  */
+    from {background-color: yellow;}
+    to {background-color: red; transform: rotate(540deg);}
+}
+             /* Balle qui rebondit dans un tube*/
+.tube{
+   width: 20px;
+    height: 164px;
+    margin-top:11px;
+    background-color:transparent;
+    border: 1px solid green;
+    position: relative;
+}
+.tube>div{
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-color:green;
+    animation-name: boul;
+    animation-duration: 4s;/* la dureé de l'animation*/
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; /* tourne en boucle */
+    transition: background-color 1s ;
+    position: absolute;
+}
+@keyframes boul {
+    0%   {top:0;box-shadow:none;}
+    20%  {top:143px; box-shadow:2px 3px green; }/* ptit effet pour la boule */
+    40%  {top:64px;box-shadow:none;}
+    60%  {top:143px;box-shadow:1px 3px green;}
+    80%  {top:74px;box-shadow:none;}
+    100% {top:143px;box-shadow:1px 3px green;}
+}
+                     /*________Loader______*/
+.cercle{
+box-sizing:content-box;
+    display: flex;
+    flex-direction: row;
+    margin-top: 17px;
+}
+.cercle>div{
+    margin: 2px;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    background-color:springgreen;
+    border: 1px solid black;
+    animation-name: cercle;
+    animation-duration: 3s;
+    /*animation-delay: -2s;*/
+    /*animation-direction: alternate-reverse;*/
+    animation-iteration-count: infinite;
+    transition: background-color 2s;
+}
+.cercle div:nth-child(1){
+    animation-delay: 1s;
+}
+.cercle div:nth-child(2){
+    animation-delay: 2s;
+}
+.cercle div:nth-child(3){
+    animation-delay: 3s;
+}
+@keyframes cercle {
+    0%   {background-color: springgreen;}
+    50%  {background-color: orange/*lightslategrey;*/ }
+    100%  {background-color: red;}
+}
+                                            /*----------------------------------------------------------------
+                                                                   **************
+                                                                   *  section3  *
+                                                                   **************
+                               ________________________________________________________________*/
+
+
+                       /*_______Moto qui Faites la queue________*/
+.course{
+    position: relative;
+   /* box-shadow: 10px 5px 50px black inset;*/
+}
+.course div {
+    position: absolute;
+    animation-name: course, rotation, colorChange;
+    animation-duration: 15s, 2s, 7s; /* Durée des animations */
+    animation-iteration-count: infinite, infinite, infinite; /* Répéter les animations */
+    animation-timing-function: linear, linear, linear;
+    top: 0;
+    left: 0;
+    color: #63E6BE;
+    transition: color 3s;
+}
+.course div:nth-child(2) {
+    animation-delay: 1s;
+}
+.course div:nth-child(3) {
+    animation-delay: 2s;
+}
+.course div:nth-child(4) {
+    animation-delay: 3s;
+}
+.course div:nth-child(5) {
+    animation-delay: 4s;
+}
+.course div:nth-child(6) {
+    animation-delay: 5s;
+}
+.course div:nth-child(7) {
+    animation-delay: 6s;
+}
+.course div:nth-child(8) {
+    animation-delay:7s;
+}
+/* Animation de déplacement  */
+@keyframes course {
+    0% {
+        top: 0;
+        left: 0;/* position initial */
+    }
+    8% {
+        top: 0;
+        left: 96%; /* Déplacement à droite */
+    }
+    50% {
+        top: 89%; /* Déplacement en bas à droite */
+        left: 96%;
+
+    }
+    75% {
+        top: 92%; /* Déplacement en bas à gauche */
+        left: 0;
+    }
+    100% {
+        top: 0;
+        left: 0; /* Retour au départ */
+    }
+}
+
+/* Animation de rotation */
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Animation du changement de couleur  */
+@keyframes colorChange {
+    0% { color: #FFD43B; }
+    25% { color: #d42b4d; }
+    50% { color: #63E6BE; }
+    75% { color: #5533d1; }
+    100% { color: #B197FC; }
+}
+
+.cercle_3d {
+    perspective: 1000px; /* Ajoute de la perspective  3D */
+    display: flex;
+    top: 50px;
+    position: relative;
+    height: 200px;
+    transform-style: preserve-3d; /*for the roratation*/
+    animation-iteration-count: infinite;
+    animation-name: rotate_anim;
+    animation-duration: 25s;
+}
+
+.cercle_3d > div {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius:2px;
+}
+.cercle_3d > div:nth-child(1) {
+    background-color: red;
+    transform: rotateY(0deg) translateZ(50px); /* translation pour la visiblité /rayon du cercle */
+}
+
+.cercle_3d > div:nth-child(2) {
+    background-color: blue;
+    transform: rotateY(40deg) translateZ(50px); /* la rotation */
+}
+
+.cercle_3d > div:nth-child(3) {
+    background-color: orange;
+    transform: rotateY(80deg) translateZ(50px);
+}
+
+.cercle_3d > div:nth-child(4) {
+    background-color: lightblue;
+    transform: rotateY(120deg) translateZ(50px);
+}
+
+.cercle_3d > div:nth-child(5) {
+    background-color: green;
+    transform: rotateY(160deg) translateZ(50px);
+}
+
+.cercle_3d > div:nth-child(6) {
+    background-color: purple;
+    transform: rotateY(200deg) translateZ(50px);
+}
+
+.cercle_3d > div:nth-child(7) {
+    background-color: pink;
+    transform: rotateY(240deg) translateZ(50px);
+}
+
+.cercle_3d > div:nth-child(8) {
+    background-color: yellow;
+    transform: rotateY(280deg) translateZ(50px);
+}
+
+.cercle_3d > div:nth-child(9) {
+    background-color: brown;
+    transform: rotateY(320deg) translateZ(50px);
+}
+#queue {
+    position: relative;
+}
+.Anim_3d{
+    /*transform: skew(50deg,24deg);*/
+
+}
+@keyframes rotate_anim {
+    from {
+        transform: rotateY(0deg) /*rotateZ(13deg) perspective(1000px)*/;
+
+    }
+    to {
+        transform: rotateY(360deg) /*rotateZ(13deg) perspective(1000px)*/;
+
+    }
+}
+
