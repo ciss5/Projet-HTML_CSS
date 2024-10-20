@@ -237,7 +237,7 @@ box-sizing:content-box;
     }
 }
 
-/* Animation du changement de couleur  */
+/* Animation pour le  changement de couleur  */
 @keyframes colorChange {
     0% { color: #FFD43B; }
     25% { color: #d42b4d; }
@@ -245,13 +245,11 @@ box-sizing:content-box;
     75% { color: #5533d1; }
     100% { color: #B197FC; }
 }
-
+                /*_______Animation_3D________*/
 .cercle_3d {
     perspective: 1000px; /* Ajoute de la perspective  3D */
     display: flex;
-    top: 50px;
     position: relative;
-    height: 200px;
     transform-style: preserve-3d; /*for the roratation*/
     animation-iteration-count: infinite;
     animation-name: rotate_anim;
@@ -308,13 +306,6 @@ box-sizing:content-box;
     background-color: brown;
     transform: rotateY(320deg) translateZ(50px);
 }
-#queue {
-    position: relative;
-}
-.Anim_3d{
-    /*transform: skew(50deg,24deg);*/
-
-}
 @keyframes rotate_anim {
     from {
         transform: rotateY(0deg) /*rotateZ(13deg) perspective(1000px)*/;
@@ -325,4 +316,49 @@ box-sizing:content-box;
 
     }
 }
+#queue {
+    position: relative;
+}
+.Anim_3d{
+    position: absolute;
+    top: 193px;
+    left: 59px;
+    animation-name: rotate_around;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition: transform 3s;
+}
+@keyframes rotate_around {
+     0% {
+         top: 193px;
+         left: 59px;
+     }
+    25% {
+        top: 50px;
+        left: 250px;
+        transform: rotate(-360deg); /*pivoter le cercle */
+        transform-origin: 50% 100%;
+    }
+    50% {
+        top: 193px;
+        left: 489px;
+        transform: rotate(45deg);
+    }
+    75% {
+        top: 386px;
+        left: 250px;
+        transform: rotate(-45deg);
+    }
+    86% {
+        top: 193px;
+        left: 59px;
+        transform: rotate(45deg);
+    }
+    100% {
+         top: 193px;
+         left: 259px;
+        transform: rotate(-45deg);
+    }
+ }
+
 
