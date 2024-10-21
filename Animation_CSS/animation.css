@@ -154,9 +154,9 @@ box-sizing:content-box;
     animation-delay: 3s;
 }
 @keyframes cercle {
-    0%   {background-color: springgreen;}
-    50%  {background-color: orange/*lightslategrey;*/ }
-    100%  {background-color: red;}
+    0%   {background-color: black}
+    50%  {background-color:lightslategrey;}
+    100%  {background-color: white;}
 }
                                             /*----------------------------------------------------------------
                                                                    **************
