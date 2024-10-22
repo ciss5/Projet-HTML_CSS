@@ -135,7 +135,7 @@ box-sizing:content-box;
     width: 74px;
     height: 74px;
     border-radius: 50%;
-    background-color:springgreen;
+    background-color:white;
     border: 1px solid black;
     animation-name: cercle;
     animation-duration: 3s;
