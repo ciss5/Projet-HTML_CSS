@@ -111,7 +111,7 @@ h3{
     animation-name: boul;
     animation-duration: 4s;/* la dureé de l'animation*/
     animation-timing-function: linear;
-    animation-iteration-count: infinite; /* tourne en boucle */
+    animation-iteration-count: infinite ; /* tourne en boucle */
     transition: background-color 1s ;
     position: absolute;
 }
@@ -120,7 +120,8 @@ h3{
     20%  {top:143px; box-shadow:2px 3px green; }/* ptit effet pour la boule */
     40%  {top:64px;box-shadow:none;}
     60%  {top:143px;box-shadow:1px 3px green;}
-    80%  {top:74px;box-shadow:none;}
+    82%  {top:94px;box-shadow:none;}
+    91% {top:143px;box-shadow:1px 3px green;}
     100% {top:143px;box-shadow:1px 3px green;}
 }
                      /*________Loader______*/
