@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+/*________________________________ animation_css_defilement________________________________*/
+.animation_text{
+    font-size: 30px;
+    font-weight: 600;
+    min-width: 288px;
+}
+.animation_text span{
+    position: relative;
+}
+.animation_text span:before{
+    content:'youtube';
+    color:#ff7f50;
+    animation-name: anim;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    transition: background-color 10s;
+}
+@keyframes anim {
+    0%,20%{
+        content:' i am a  student in BTS SOI SLAM';
+        /*color:#eea2a2 ;*/
+    }
+    41%,60%{
+        content:' i am a developer';
+        /*color:#bbc1bf ;*/
+    }
+    41%,60%{
+        content:' Front-end ';
+       /* color:#7ac5d8;*/
+    }
+    81%,100%{
+        content:' Back-end';
+       /* color:#b49fda;*/
+    }
+}
+/*@keyframes changeColor {
+    to{
+        color:#ff7f50;
+    }
+    from{
+        color: linear-gradient(to right, #eea2a2 0%,  19%,  42%,  79%,  100%);
+    }
+}*/
+.animation_text span::after{
+    content: '';
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: black;
+    border-left: 2px solid #ff7f50;
+    right: -8px;
+    animation: cursor 0.8s infinite, typing 25s steps(14) infinite;
+}
+@keyframes cursor {
+    to{
+        border-left: 2px solid #2f3542;
+
+    }
+}
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width:0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
