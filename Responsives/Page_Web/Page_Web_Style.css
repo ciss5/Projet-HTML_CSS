@@ -1,0 +1,81 @@
+/* Style global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347; /* Couleur lors du survol */
+}
+section{
+    text-align: center;
+}
+hr {
+    width: 50%;                  /* Largeur de la ligne */
+    height: 4px;                 /* Épaisseur de la ligne */
+    background-color: #333;      /* Couleur de fond */
+    border: none;                /* Pas de bordure */
+    margin: 20px auto;           /* Centrer avec marges */
+    border-radius: 5px;          /* Coins arrondis */
+}
+section{
+    /*position: relative;*/
+}
+article {
+    /*position: absolute;*/
+}
+article>div{
+    padding:10px;
+    display: block;
+    border: 1px solid black;
+    background-color: lavenderblush;
+    margin-top:10px;
+
+}
+@media screen and (min-width:640px) {
+    article div{
+        display:inline-block;
+    }
+    hr {
+        display: none;
+    }
+}
+@media screen and (min-width:640px) {
+
+}
