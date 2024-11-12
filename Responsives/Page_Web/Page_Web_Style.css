@@ -16,6 +16,7 @@
     color: #fff;
     width: 100%;
     position: relative;
+    overflow: hidden;
 
 }
 .logo a {
@@ -113,6 +114,7 @@ footer {
     article div{
         display:inline-block;
         margin-left:0;
+        width: 288px;
     }
     .svg-inline--fa {
         display: none;
@@ -125,9 +127,17 @@ footer {
     .header{
         display: -webkit-box;
     }
+    article div{
+       width: 387px;
+    }
     nav ul {
         display: -webkit-box;
         margin-left: 897px;
+    }
+}
+@media screen and (min-width:1005px) {
+    article div{
+        width: 365px;
     }
 }
 @media print {

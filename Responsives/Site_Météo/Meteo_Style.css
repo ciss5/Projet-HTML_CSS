@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+h1{
+
+}
+img{
+    width: 77px;
+    height: auto;
+}
+h2{
+
+}
+.contenu{
+    display:block;
+}
+.info_today{
+    display: block;
+    position: relative;
+}
+.for_today{
+    display: block;
+    margin-left: 230px;
+    position: absolute;
+    top: 0;
+}
+.info_day{
+    position: relative; /* Position relative pour permettre le centrage de l'enfant */
+    height: 80px;
+}
+.info_day div{
+    display: inline-block;
+    position: absolute;       /* Permet le centrage vertical de l'enfant */
+    top: 50%;                 /* Positionne l'élément à mi-hauteur */
+    transform: translateY(-50%); /* Centre précisément l'élément verticalement */
+}
+.first_div{
+    margin-left: 20px;
+}
+.img_div{
+    margin-left: 130px;
+}
+.second_div{
+    margin-left: 248px;
+}
+.third_div{
+    margin-left: 360px;
+}
+.degree{
+    position: relative;
+}
+.degree div{
+    position: absolute;
+    top: 0;
+    margin-left: 81px;
+}
+.info{
+    margin: 5px;
+}
+.info_day div .temperatur{
+    display: block;
+}
+.temperatur div:last-child {
+    color: purple;
+    margin-left: 30px;
+}
+@media screen and (max-width:375px){
+    .info_day div div{
+        margin-left: 28px;
+    }
+}
