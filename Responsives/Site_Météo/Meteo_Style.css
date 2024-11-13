@@ -5,7 +5,9 @@
     font-family: Arial, sans-serif;
 }
 h1{
-
+    margin-top: 5px;
+    text-transform: capitalize;
+    font-size: x-large;
 }
 img{
     width: 77px;
@@ -16,59 +18,92 @@ h2{
 }
 .contenu{
     display:block;
+    margin-left: 14px;
 }
+
 .info_today{
     display: block;
     position: relative;
-}
-.for_today{
-    display: block;
-    margin-left: 230px;
-    position: absolute;
-    top: 0;
-}
-.info_day{
-    position: relative; /* Position relative pour permettre le centrage de l'enfant */
-    height: 80px;
-}
-.info_day div{
-    display: inline-block;
-    position: absolute;       /* Permet le centrage vertical de l'enfant */
-    top: 50%;                 /* Positionne l'élément à mi-hauteur */
-    transform: translateY(-50%); /* Centre précisément l'élément verticalement */
-}
-.first_div{
-    margin-left: 20px;
-}
-.img_div{
-    margin-left: 130px;
-}
-.second_div{
-    margin-left: 248px;
-}
-.third_div{
-    margin-left: 360px;
 }
 .degree{
     position: relative;
 }
 .degree div{
+    position:absolute;
+    top: 0;
+    margin-left: 80px;
+}
+.for_today{
+    display: block;
+    margin-left: 174px;
     position: absolute;
     top: 0;
-    margin-left: 81px;
 }
-.info{
-    margin: 5px;
+                    /* partir du contenu global */
+section{
+    display: block;
+    width: 100%;
+    padding: 0;
 }
-.info_day div .temperatur{
+hr {
     display: block;
 }
-.temperatur div:last-child {
-    color: purple;
-    margin-left: 30px;
+.info_day{
+    display: block;
 }
-@media screen and (max-width:375px){
-    .info_day div div{
-        margin-left: 28px;
+.info_day>div:first-child{
+    margin-left: 0;
+}
+.info_day div{
+    display: inline-block;
+    margin-left: 15px;
+}
+.temperatur span{
+    display: block;
+}
+.temperatur span:last-child{
+    opacity: 0.5;
+}
+/* pour les ecran moins */
+
+@media screen and (min-width:640px) {
+    h1{
+        font-size: xx-large;
     }
+    .for_today {
+        margin-left: 391px;
+    }
+    .info_day{
+        padding: 10px;
+    }
+    .info_day div{
+        margin-left: 71px;
+    }
+}
+@media screen and (min-width:769px) {
+    h1{
+        font-size: xxx-large;
+    }
+    section{
+        display:-webkit-box;
+
+    }
+    .contenu{
+        margin-left: 39px;
+    }
+    .info_day{
+        display: block;
+        padding: 10px;
+    }
+    hr {
+        display: none;
+    }
+    .info_day div{
+        display: block;
+    }
+    .temperatur span{
+        display: inline-block;
+    }
+
+
 }
