@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.container-fluid {
+    width: 100%;
+    padding: 0 15px; /* Padding générique */
+}
+@media (min-width: 1200px) {
+    .container-fluid {
+        padding: 0 50px; /* Plus de marge pour les écrans larges */
+    }
+}
+.phonNav{
+    display: none;
+}
