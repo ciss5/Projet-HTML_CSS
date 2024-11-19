@@ -137,6 +137,23 @@ p{
 
 /* Colonnes pour écrans > 900px (md) */
 @media (min-width: 900px) {
+    .imgphon img {
+        width: 230px;
+        height: auto;
+    }
+    .phonNav{
+        display: none;
+    }
+    li{
+        margin: 0 104px;
+    }
+    .container{
+        padding: 0;
+    }
+    .row{
+        height: 657px;
+        margin: 29px;
+    }
     .navli{
         display: block;
     }
