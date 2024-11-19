@@ -20,9 +20,34 @@ header{
 .container{
     display: inline-block;
     text-align: center;
+    padding: 0 34px;
 }
 .phonNav{
+    display: block;
+    margin: 18px;
+}
+.phonNav img{
+    width: 75px;
+    height: auto;
+}
+.svg-inline--fa{
+    float: right;
+    margin-top: 17px;
+}
+.navli{
     display: none;
+}
+h1{
+    font-size: x-large;
+   font-weight: 900;
+    text-align: center;
+}
+.imgphon img{
+    width: 187px;
+    height: auto;
+}
+.imgphon{
+    text-align: center;
 }
 /************contenu main********/
 .row {
@@ -32,8 +57,9 @@ header{
     border: 1px solid black;
     vertical-align: top;
     background-color: #555555;
+    margin: 14px 0;
     color: #fff;
-    height: 508px;
+    height: 1032px;
 }
 .img_inside{
     width:115px;
@@ -51,6 +77,13 @@ header{
 section{
     display:block;
 }
+h2{
+    font-weight: 800;
+    font-size: 18px;
+}
+p{
+    padding: 13px 0;
+}
 /*[class*="col-"] {
     padding: 0 15px;
     box-sizing: border-box;
@@ -58,20 +91,55 @@ section{
 /************contenu pour les ecrans>700**************/
 /* Colonnes pour écrans > 700px (sm) */
 @media (min-width: 700px) {
-    .phonNav{
-        display: block;
+    .phonNav .svg-inline--fa {
+        display: none;
     }
-    header{
+    h1{
+        font-size: xx-large;
+    }
+    h2{
+        font-weight: 900;
+        font-size: 27px;
+    }
+
+    .navli{
+        display:block;
+        text-align: center;
+    }
+
+    li{
         display: inline-block;
+        border: 1px solid black;
+        padding: 3px;
+        border-radius: 8px;
+        width: 79px;
+        color: white;
+        background-color: #555555;
+        margin: 0 70px;
+        opacity: 0.65;
+    }
+    li:hover{
+        background-color: #333333;
+        opacity: 1;
+    }
+    .container{
+       padding:  0 96px;
+    }
+    .row{
+        height: 517px;
     }
     .col-sm-12 {
         width: calc(100% / 12 * 12); /* Les colonnes prennent toute la largeur */
         display: inline-block;
     }
+
 }
 
 /* Colonnes pour écrans > 900px (md) */
 @media (min-width: 900px) {
+    .navli{
+        display: block;
+    }
     .col-md-6 {
         width: calc(100% / 12 * 5); /* Les colonnes prennent la moitié de la largeur */
         display: inline-block;
