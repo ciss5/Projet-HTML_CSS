@@ -86,6 +86,8 @@ hr {
     }
     section{
         display:-webkit-box;
+        text-align: center;
+       /* margin-left: 98px;*/
 
     }
     .contenu{
