@@ -59,6 +59,7 @@ h1{
     background-color: #555555;
     margin: 14px 0;
     color: #fff;
+    border-radius: 12px;
     height: 1032px;
 }
 .img_inside{
@@ -84,9 +85,10 @@ h2{
 p{
     padding: 13px 0;
 }
-/*[class*="col-"] {
-    padding: 0 15px;
-    box-sizing: border-box;
+/********************************footer********************************/
+footer{
+    display: block;
+    text-align: center;
 }
 /************contenu pour les ecrans>700**************/
 /* Colonnes pour écrans > 700px (sm) */
