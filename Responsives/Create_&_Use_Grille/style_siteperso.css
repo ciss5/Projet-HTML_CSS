@@ -166,6 +166,10 @@ p{
 
 /* Colonnes pour écrans > 1200px (lg) */
 @media (min-width: 1200px) {
+    .row{
+        height: 657px;
+        margin: 44px;
+    }
     .col-lg-4 {
         width: calc(100% / 12 * 3); /* Les colonnes prennent un tiers de la largeur */
         display: inline-block;
