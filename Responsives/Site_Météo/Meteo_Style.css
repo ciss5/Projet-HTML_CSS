@@ -14,7 +14,6 @@ img{
     height: auto;
 }
 h2{
-
 }
 .contenu{
     display:block;
@@ -56,7 +55,6 @@ hr {
 }
 .info_day div{
     display: inline-block;
-    margin-left: 15px;
 }
 .temperatur span{
     display: block;
@@ -64,7 +62,13 @@ hr {
 .temperatur span:last-child{
     opacity: 0.5;
 }
-/* pour les ecran moins */
+.info_contenu >div {
+    width: 100px;
+}
+.temperatur .third_div{
+    width: 25px;
+}
+/************************* pour les ecran>640 **********************/
 
 @media screen and (min-width:640px) {
     h1{
@@ -76,10 +80,11 @@ hr {
     .info_day{
         padding: 10px;
     }
-    .info_day div{
-        margin-left: 71px;
+    .info_contenu >div {
+        width: 151px;
     }
 }
+/************************* pour les ecran>769 **********************/
 @media screen and (min-width:769px) {
     h1{
         font-size: xxx-large;
@@ -87,8 +92,6 @@ hr {
     section{
         display:-webkit-box;
         text-align: center;
-       /* margin-left: 98px;*/
-
     }
     .contenu{
         margin-left: 39px;
@@ -106,6 +109,4 @@ hr {
     .temperatur span{
         display: inline-block;
     }
-
-
 }
